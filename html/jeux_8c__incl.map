@@ -1,0 +1,11 @@
+<map id="jeux.c" name="jeux.c">
+<area shape="rect" id="node1" title=" " alt="" coords="436,5,497,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,93,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="117,155,253,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="277,155,408,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="525,155,635,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="659,155,725,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="750,155,821,181"/>
+<area shape="rect" id="node8" href="$hero_8h_source.html" title=" " alt="" coords="435,80,498,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="433,155,501,181"/>
+</map>

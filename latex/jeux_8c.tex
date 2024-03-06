@@ -1,0 +1,43 @@
+\hypertarget{jeux_8c}{}\doxysection{jeux.\+c File Reference}
+\label{jeux_8c}\index{jeux.c@{jeux.c}}
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}hero.\+h\char`\"{}}\newline
+Include dependency graph for jeux.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{jeux_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{jeux_8c_aed6605bee34d09afc3aade7451fdf63a}\label{jeux_8c_aed6605bee34d09afc3aade7451fdf63a}} 
+void {\bfseries intialiser} (\mbox{\hyperlink{structmenu}{menu}} $\ast$m, \mbox{\hyperlink{structchangeinput}{changeinput}} $\ast$inp)
+\item 
+\mbox{\Hypertarget{jeux_8c_a6130c4029642e482236a40944cee9bc9}\label{jeux_8c_a6130c4029642e482236a40944cee9bc9}} 
+void {\bfseries affichagemenuanim} (\mbox{\hyperlink{structmenu}{menu}} m, S\+D\+L\+\_\+\+Surface $\ast$ecran, int $\ast$continuer)
+\item 
+void \mbox{\hyperlink{jeux_8c_a0ab2c34349807b30ed2e2fc5e4904d64}{affichage}} (int interface, int y, int f, int k, \mbox{\hyperlink{structmenu}{menu}} m, S\+D\+L\+\_\+\+Surface $\ast$ecran, int n, \mbox{\hyperlink{structchangeinput}{changeinput}} inp, int chinp)
+\item 
+\mbox{\Hypertarget{jeux_8c_ac4a2df9a30045df9a6d55ebfff934b40}\label{jeux_8c_ac4a2df9a30045df9a6d55ebfff934b40}} 
+void {\bfseries freemenu} (\mbox{\hyperlink{structmenu}{menu}} $\ast$m)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{jeux_8c_a0ab2c34349807b30ed2e2fc5e4904d64}\label{jeux_8c_a0ab2c34349807b30ed2e2fc5e4904d64}} 
+\index{jeux.c@{jeux.c}!affichage@{affichage}}
+\index{affichage@{affichage}!jeux.c@{jeux.c}}
+\doxysubsubsection{\texorpdfstring{affichage()}{affichage()}}
+{\footnotesize\ttfamily void affichage (\begin{DoxyParamCaption}\item[{int}]{interface,  }\item[{int}]{y,  }\item[{int}]{f,  }\item[{int}]{k,  }\item[{\mbox{\hyperlink{structmenu}{menu}}}]{m,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran,  }\item[{int}]{n,  }\item[{\mbox{\hyperlink{structchangeinput}{changeinput}}}]{inp,  }\item[{int}]{chinp }\end{DoxyParamCaption})}
+
+interface tee play//////////
+
+interface tee input //////////

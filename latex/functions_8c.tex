@@ -1,0 +1,48 @@
+\hypertarget{functions_8c}{}\doxysection{functions.\+c File Reference}
+\label{functions_8c}\index{functions.c@{functions.c}}
+{\ttfamily \#include \char`\"{}enigmestat.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+Include dependency graph for functions.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functions_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{functions_8c_a31930be2dea8fd83602ef588b944dcf8}\label{functions_8c_a31930be2dea8fd83602ef588b944dcf8}} 
+void {\bfseries Init\+Grille} (\mbox{\hyperlink{structgrille}{grille}} $\ast$g)
+\item 
+\mbox{\Hypertarget{functions_8c_a681563a8a09afbc2b752d84b4cf38baf}\label{functions_8c_a681563a8a09afbc2b752d84b4cf38baf}} 
+void {\bfseries Free\+Grille} (\mbox{\hyperlink{structgrille}{grille}} $\ast$g)
+\item 
+\mbox{\Hypertarget{functions_8c_a797aac7bda99c3ae297c7eb69c15c902}\label{functions_8c_a797aac7bda99c3ae297c7eb69c15c902}} 
+bool {\bfseries complete} (const int board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})
+\item 
+\mbox{\Hypertarget{functions_8c_aa4ecad8b7d526a485e1897254da4f38a}\label{functions_8c_aa4ecad8b7d526a485e1897254da4f38a}} 
+bool {\bfseries ligne\+OK} (const int board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}, int row)
+\item 
+\mbox{\Hypertarget{functions_8c_a0844c4586bbeadd7b2a4dc34ec493b69}\label{functions_8c_a0844c4586bbeadd7b2a4dc34ec493b69}} 
+bool {\bfseries colone\+OK} (const int board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}, int col)
+\item 
+\mbox{\Hypertarget{functions_8c_af11d1a1c1261d0560e47b142aa134aba}\label{functions_8c_af11d1a1c1261d0560e47b142aa134aba}} 
+bool {\bfseries diagonale\+OK} (const int board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})
+\item 
+\mbox{\Hypertarget{functions_8c_a7c07bff8dd959d8f27330afad36ceb7e}\label{functions_8c_a7c07bff8dd959d8f27330afad36ceb7e}} 
+bool {\bfseries perdu} (const int board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}, bool $\ast$exaequo)
+\item 
+\mbox{\Hypertarget{functions_8c_a2b64db13f24dbbfa1ffe5bf56be69316}\label{functions_8c_a2b64db13f24dbbfa1ffe5bf56be69316}} 
+void {\bfseries Player1} (\mbox{\hyperlink{structgrille}{grille}} $\ast$g)
+\item 
+\mbox{\Hypertarget{functions_8c_ab79c5e4e0a2cb02dede36ed440abbfb4}\label{functions_8c_ab79c5e4e0a2cb02dede36ed440abbfb4}} 
+void {\bfseries Player2} (\mbox{\hyperlink{structgrille}{grille}} $\ast$g)
+\item 
+\mbox{\Hypertarget{functions_8c_a6e5cc3b6551b54c588cca9ff0424959e}\label{functions_8c_a6e5cc3b6551b54c588cca9ff0424959e}} 
+void {\bfseries Play} (\mbox{\hyperlink{structgrille}{grille}} $\ast$g, int $\ast$v)
+\item 
+\mbox{\Hypertarget{functions_8c_a3e98ec8dff9f5270841e54291f0a3672}\label{functions_8c_a3e98ec8dff9f5270841e54291f0a3672}} 
+void {\bfseries Blit\+All} (\mbox{\hyperlink{structgrille}{grille}} $\ast$g)
+\end{DoxyCompactItemize}

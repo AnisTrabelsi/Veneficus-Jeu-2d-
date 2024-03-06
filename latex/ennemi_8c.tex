@@ -1,0 +1,172 @@
+\hypertarget{ennemi_8c}{}\doxysection{ennemi.\+c File Reference}
+\label{ennemi_8c}\index{ennemi.c@{ennemi.c}}
+
+
+code  
+
+
+{\ttfamily \#include \char`\"{}hero.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}background.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}ennemi.\+h\char`\"{}}\newline
+Include dependency graph for ennemi.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ennemi_8c_a03761fcf3d8da6e50dad96069d21c26b}{init\+Ennemi}} (\mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em pour initialiser l\textquotesingle{}ennemi . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ennemi_8c_a9d3e392869ad0f495a58cb4c243a6670}\label{ennemi_8c_a9d3e392869ad0f495a58cb4c243a6670}} 
+void {\bfseries init\+Ennemi2} (\mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$en1, \mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$en2)
+\item 
+void \mbox{\hyperlink{ennemi_8c_a28f516b9ca0b0ddf3f57decbd12b6664}{afficher\+Ennemi}} (\mbox{\hyperlink{structEnnemi}{Ennemi}} e, S\+D\+L\+\_\+\+Surface $\ast$ecran, int multijoueur)
+\begin{DoxyCompactList}\small\item\em pour Afficher l\textquotesingle{}ennemi . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ennemi_8c_a0c8b2e591c62f34e31fb6744a98fe0f9}\label{ennemi_8c_a0c8b2e591c62f34e31fb6744a98fe0f9}} 
+void {\bfseries afficher\+Ennemi2} (\mbox{\hyperlink{structEnnemi}{Ennemi}} e, S\+D\+L\+\_\+\+Surface $\ast$ecran, int multijoueur)
+\item 
+void \mbox{\hyperlink{ennemi_8c_a0a3f8b851d5f13674ca4f6016aa1a03a}{animer\+Ennemi}} (\mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$e, int multijoueur)
+\begin{DoxyCompactList}\small\item\em pour Animer l\textquotesingle{}ennemi . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ennemi_8c_ad41f6d0b60b684ed2058b921e8f03e73}{deplacer}} (\mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em pour Deplacer l\textquotesingle{}ennemi . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ennemi_8c_a4f336407348ffcef999b7faaf73b89e1}{collision\+BB}} (\mbox{\hyperlink{structperso}{perso}} p, \mbox{\hyperlink{structEnnemi}{Ennemi}} e, int collision)
+\begin{DoxyCompactList}\small\item\em pour la collision entre hero et ennemi . \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{ennemi_8c_a19b2d35ff8af9e36759e34552eb89b49}\label{ennemi_8c_a19b2d35ff8af9e36759e34552eb89b49}} 
+void {\bfseries deplacer\+IA} (\mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$e, \mbox{\hyperlink{structperso}{perso}} p)
+\item 
+\mbox{\Hypertarget{ennemi_8c_ad63ebb7b62c72ee124d545b463916be7}\label{ennemi_8c_ad63ebb7b62c72ee124d545b463916be7}} 
+void {\bfseries update\+\_\+ennemi} (\mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$e, \mbox{\hyperlink{structperso}{perso}} p)
+\item 
+\mbox{\Hypertarget{ennemi_8c_a31b9ad085a72dd010580de055ee5d467}\label{ennemi_8c_a31b9ad085a72dd010580de055ee5d467}} 
+void {\bfseries update\+Ennemi\+State} (\mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$e, int dist\+EH)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+code 
+
+\begin{DoxyAuthor}{Author}
+Computer Wizards 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Apr 22, 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ennemi_8c_a28f516b9ca0b0ddf3f57decbd12b6664}\label{ennemi_8c_a28f516b9ca0b0ddf3f57decbd12b6664}} 
+\index{ennemi.c@{ennemi.c}!afficherEnnemi@{afficherEnnemi}}
+\index{afficherEnnemi@{afficherEnnemi}!ennemi.c@{ennemi.c}}
+\doxysubsubsection{\texorpdfstring{afficherEnnemi()}{afficherEnnemi()}}
+{\footnotesize\ttfamily void afficher\+Ennemi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEnnemi}{Ennemi}}}]{e,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran,  }\item[{int}]{multijoueur }\end{DoxyParamCaption})}
+
+
+
+pour Afficher l\textquotesingle{}ennemi . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \mbox{\hyperlink{structEnnemi}{Ennemi}} \\
+\hline
+{\em ecran} & la surface \\
+\hline
+{\em b} & l\textquotesingle{}image de background ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ennemi_8c_a0a3f8b851d5f13674ca4f6016aa1a03a}\label{ennemi_8c_a0a3f8b851d5f13674ca4f6016aa1a03a}} 
+\index{ennemi.c@{ennemi.c}!animerEnnemi@{animerEnnemi}}
+\index{animerEnnemi@{animerEnnemi}!ennemi.c@{ennemi.c}}
+\doxysubsubsection{\texorpdfstring{animerEnnemi()}{animerEnnemi()}}
+{\footnotesize\ttfamily void animer\+Ennemi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$}]{e,  }\item[{int}]{multijoueur }\end{DoxyParamCaption})}
+
+
+
+pour Animer l\textquotesingle{}ennemi . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \mbox{\hyperlink{structEnnemi}{Ennemi}} \\
+\hline
+{\em ecran} & la surface \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ennemi_8c_a4f336407348ffcef999b7faaf73b89e1}\label{ennemi_8c_a4f336407348ffcef999b7faaf73b89e1}} 
+\index{ennemi.c@{ennemi.c}!collisionBB@{collisionBB}}
+\index{collisionBB@{collisionBB}!ennemi.c@{ennemi.c}}
+\doxysubsubsection{\texorpdfstring{collisionBB()}{collisionBB()}}
+{\footnotesize\ttfamily int collision\+BB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structperso}{perso}}}]{p,  }\item[{\mbox{\hyperlink{structEnnemi}{Ennemi}}}]{e,  }\item[{int}]{collision }\end{DoxyParamCaption})}
+
+
+
+pour la collision entre hero et ennemi . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & personnage \\
+\hline
+{\em e} & \mbox{\hyperlink{structEnnemi}{Ennemi}} \\
+\hline
+{\em collision} & entier de collision ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 si il y a une collision 
+
+0 si il n\textquotesingle{}y a pas de collision 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ennemi_8c_ad41f6d0b60b684ed2058b921e8f03e73}\label{ennemi_8c_ad41f6d0b60b684ed2058b921e8f03e73}} 
+\index{ennemi.c@{ennemi.c}!deplacer@{deplacer}}
+\index{deplacer@{deplacer}!ennemi.c@{ennemi.c}}
+\doxysubsubsection{\texorpdfstring{deplacer()}{deplacer()}}
+{\footnotesize\ttfamily void deplacer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+pour Deplacer l\textquotesingle{}ennemi . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \mbox{\hyperlink{structEnnemi}{Ennemi}} ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ennemi_8c_a03761fcf3d8da6e50dad96069d21c26b}\label{ennemi_8c_a03761fcf3d8da6e50dad96069d21c26b}} 
+\index{ennemi.c@{ennemi.c}!initEnnemi@{initEnnemi}}
+\index{initEnnemi@{initEnnemi}!ennemi.c@{ennemi.c}}
+\doxysubsubsection{\texorpdfstring{initEnnemi()}{initEnnemi()}}
+{\footnotesize\ttfamily void init\+Ennemi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structEnnemi}{Ennemi}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+pour initialiser l\textquotesingle{}ennemi . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \mbox{\hyperlink{structEnnemi}{Ennemi}} ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}

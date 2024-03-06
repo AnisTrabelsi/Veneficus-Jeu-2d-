@@ -1,0 +1,83 @@
+\hypertarget{hero_8c}{}\doxysection{hero.\+c File Reference}
+\label{hero_8c}\index{hero.c@{hero.c}}
+
+
+Testing Program.  
+
+
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include $<$S\+D\+L/\+S\+D\+L\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}hero.\+h\char`\"{}}\newline
+Include dependency graph for hero.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{hero_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{hero_8c_a96831fedb3a5a07b2e863ef3d6e2ee50}\label{hero_8c_a96831fedb3a5a07b2e863ef3d6e2ee50}} 
+\#define {\bfseries vitesse\+\_\+max}~40
+\item 
+\mbox{\Hypertarget{hero_8c_aed9ea78689ecce0b7264c02c7f8a9a54}\label{hero_8c_aed9ea78689ecce0b7264c02c7f8a9a54}} 
+\#define {\bfseries G}~16
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{hero_8c_a7ee01e86fdb2b09207a3b5f2112524f5}\label{hero_8c_a7ee01e86fdb2b09207a3b5f2112524f5}} 
+void {\bfseries init\+Perso} (\mbox{\hyperlink{structperso}{perso}} $\ast$p)
+\item 
+\mbox{\Hypertarget{hero_8c_a49ce548c81fb173759f8fd8e8c22b0a9}\label{hero_8c_a49ce548c81fb173759f8fd8e8c22b0a9}} 
+void {\bfseries init\+Perso2} (\mbox{\hyperlink{structperso}{perso}} $\ast$p)
+\item 
+\mbox{\Hypertarget{hero_8c_ac9be4ef0dd0d9b6b2a5c4a821f6afe86}\label{hero_8c_ac9be4ef0dd0d9b6b2a5c4a821f6afe86}} 
+void {\bfseries afficher\+Perso} (\mbox{\hyperlink{structperso}{perso}} p, S\+D\+L\+\_\+\+Surface $\ast$ecran, int ts, int v, \mbox{\hyperlink{structInput}{Input}} I, int multijoueur)
+\item 
+\mbox{\Hypertarget{hero_8c_a740a60299ea7837174fe9a2b1c7fbe03}\label{hero_8c_a740a60299ea7837174fe9a2b1c7fbe03}} 
+void {\bfseries mouvementright} (\mbox{\hyperlink{structperso}{perso}} $\ast$p)
+\item 
+\mbox{\Hypertarget{hero_8c_a43dbd8a30f85debe7437b2c5aad1ad3a}\label{hero_8c_a43dbd8a30f85debe7437b2c5aad1ad3a}} 
+void {\bfseries mouvementleft} (\mbox{\hyperlink{structperso}{perso}} $\ast$p)
+\item 
+\mbox{\Hypertarget{hero_8c_a4302ff9135390acd31855ced2c3c0029}\label{hero_8c_a4302ff9135390acd31855ced2c3c0029}} 
+void {\bfseries initialiser\+\_\+input} (\mbox{\hyperlink{structInput}{Input}} $\ast$I)
+\item 
+\mbox{\Hypertarget{hero_8c_a5ae72f285bd44aae7d49bd98f8f2f786}\label{hero_8c_a5ae72f285bd44aae7d49bd98f8f2f786}} 
+void {\bfseries animerperso} (\mbox{\hyperlink{structperso}{perso}} $\ast$p, S\+D\+L\+\_\+\+Surface $\ast$ecran, int v, \mbox{\hyperlink{structInput}{Input}} $\ast$I)
+\item 
+\mbox{\Hypertarget{hero_8c_a2cc9fba9f525a7c7774296993610cba9}\label{hero_8c_a2cc9fba9f525a7c7774296993610cba9}} 
+void {\bfseries freesurface} (\mbox{\hyperlink{structperso}{perso}} $\ast$p)
+\item 
+\mbox{\Hypertarget{hero_8c_a1a12537051d4f38474836d785184ff68}\label{hero_8c_a1a12537051d4f38474836d785184ff68}} 
+void {\bfseries init\+\_\+vod} (\mbox{\hyperlink{structvod}{vod}} $\ast$vicde)
+\item 
+\mbox{\Hypertarget{hero_8c_a4452a00234b79ef90343a463c3e4d4d8}\label{hero_8c_a4452a00234b79ef90343a463c3e4d4d8}} 
+void {\bfseries affichervictory\+\_\+defeat0} (\mbox{\hyperlink{structvod}{vod}} vicde, int ts, int v, int temps, \mbox{\hyperlink{structperso}{perso}} p, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\item 
+\mbox{\Hypertarget{hero_8c_a04a4752eb1985eb33072e4368236e9ce}\label{hero_8c_a04a4752eb1985eb33072e4368236e9ce}} 
+void {\bfseries affichervictory\+\_\+defeat1} (\mbox{\hyperlink{structvod}{vod}} vicde, int ts, int v, int ts1, int v1, int ts2, int v2, int temps, S\+D\+L\+\_\+\+Surface $\ast$ecran, \mbox{\hyperlink{structperso}{perso}} p1, \mbox{\hyperlink{structperso}{perso}} p2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Testing Program. 
+
+\begin{DoxyAuthor}{Author}
+C Team 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+Apr 22, 2021
+\end{DoxyDate}
+Testing program for hero $\ast$ 
